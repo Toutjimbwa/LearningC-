@@ -1,8 +1,6 @@
-﻿using System; //Library or Namespace
+﻿using System;
 
-//Formating the document properly
-//Edit/Advanced/Format Document
-//Or CTRL + K, CTRL + D (Both in sequence).
+//CTRL+C to stop a program.
 
 namespace LearningCSharp
 {
@@ -10,7 +8,11 @@ namespace LearningCSharp
     {
         static void Main(string[] foShizzleMaNizzle)
         {
-            System.Console.WriteLine("Hello World!");
+            int counter = 0;
+            while (counter < 10)
+            {
+                Console.WriteLine("Hello World!");
+            }
         }
     }
 }
