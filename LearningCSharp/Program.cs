@@ -7,13 +7,9 @@ namespace LearningCSharp
     {
         static void Main(string[] foShizzleMaNizzle)
         {
-            
-            var names = new List<string> { "<name>", "Ana", "Tistou" };
 
-            foreach (var name in names)
-            {
-                Console.WriteLine($"Hello {name.ToUpper()}!");
-            }
+            var names = new List<string>();
+
         }
     }
 }
