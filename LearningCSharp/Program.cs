@@ -7,20 +7,23 @@ namespace LearningCSharp
     {
         static void Main(string[] foShizzleMaNizzle)
         {
+            var fibonacci = new List<int> { 1, 1, };
 
-            var names = new List<string> { "Hytta", "Schalom", "Tistou", "Ajbar" };
-            var index = names.IndexOf("Tistou");
-            
-            foreach (var name in names)
+            while (fibonacci.Count < 20)
             {
-                Console.WriteLine($"{names.IndexOf(name)}: {name}");
+                var previous = fibonacci[fibonacci.Count - 1];
+                var previous2 = fibonacci[fibonacci.Count - 2];
+                fibonacci.Add(previous + previous2);
             }
+            
 
-            names.Sort();
+            //Fastest way to debug?
+            //Mouse, Right click, select "Run to cursor"
 
-            foreach (var name in names)
+
+            foreach (var i in fibonacci)
             {
-                Console.WriteLine($"{names.IndexOf(name)}: {name}");
+                Console.WriteLine(i);
             }
         }
     }
